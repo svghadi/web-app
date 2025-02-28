@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: public.ecr.aws/docker/library/alpine:latest
+          image: gcr.io/distroless/base:latest
           command: ["sleep"]
           args:
           - 10h
