@@ -17,6 +17,7 @@ spec:
       containers:
         - name: webapp
           image: public.ecr.aws/docker/library/nginx:latest
+          command: command: ["/bin/sh", "-c", "sleep 10h"]
           ports:
             - containerPort: 80
           resources:
