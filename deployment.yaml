@@ -16,10 +16,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: gcr.io/distroless/base:latest
-          command: ["sleep"]
-          args:
-          - 10h
+          image: quay.io/svghadi/webapp:1.0.0
           ports:
             - containerPort: 80
           resources:
